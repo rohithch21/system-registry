@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        title System
+        body
+            ul
+                li
+                    a(href="/home") Home
+            h1 Add a Connected System
+            form(action="/system", method="post")
+                label(for="idConnectedSytem") Connected System ID : 
+                input(id="idConnectedSytem", type="text", name="connected-sytem-id")
+                br
+                br
+                label(for="idConnSystemName") Connected System Name : 
+                input(id="idConnSystemName", type="text", name="connected-system-name")
+                br
+                br
+                label(for="idLogicalSsytemId") Logical System ID : 
+                input(id="idLogicalSsytemId", type="text", name="logical-system-id")
+                br
+                br
+                label(for="idAvailabilityCheckbox") Active : 
+                input(id="idAvailabilityCheckbox", type="checkbox", name="availability")
+                br
+                br
+                input(type="submit", value="Save")
+        
+            

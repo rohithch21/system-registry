@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title Home Page 
+        body
+            ul
+                li 
+                    a(href="/system") Add System
+            h1 Connected Systems
+            br
+            table#registry-tab
+                thead
+                    tr
+                        th Connected System ID
+                        th Connected System Name
+                        th Logical System ID
+                        th Availability
+                tbody#registry-content
+                    each val in result
+                        tr
+                            td= val.ConnectedSystemID
+                            td= val.ConnectedSystemName
+                            td= val.LogicalSystemID
+                            td= val.IsActive
+                    
+
+            
+                    
